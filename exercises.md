@@ -4,63 +4,126 @@ IMPORTANT: Do ALL exercises inside ~/cli_sandbox to avoid changing important fil
 
 1: Create a file called "evaluate.txt".
 
+    touch evaluate.txt
+
+
 2: Output hidden files.
+
+    ls -la
 
 3: Output who the active user is.
 
+    whoami
+
 4: Output hidden files.
+
+    ls -la
 
 5: Create a file "bay.txt" containing: "needle banish needle stock needle". Then output the sorted lines.
 
+    echo "needle banish needle stock needle" > bay.txt && sort bay.txt
+
 6: Use: echo "evaluate recommend experienced pen advice" > "advice.txt" to create or overwrite "advice.txt".
+
+    echo "evaluate recommend experienced pen advice" > advice.txt
 
 7: Use: echo "cater terminal ethics cousin advantage" > "hill.txt" to create or overwrite "hill.txt".
 
+    echo "cater terminal ethics cousin advantage" > hill.txt
+
 8: Output what's in the directory.
+
+    ls
 
 9: Create a file "pray.txt" containing: "sister medal sister experienced sister". Then output the unique lines.
 
+    echo "sister medal sister experienced sister" > pray.txt && sort -u pray.txt
+
 10: Create a file "medal.txt" containing: "recommend advice nerve excuse medal". Then search recursively for "medal".
+
+    echo "recommend advice nerve excuse medal" > medal.txt && grep -r "medal"
 
 11: Output the full path you are on.
 
+    pwd
+
 12: Output what's in the directory.
+
+    ls
 
 13: Delete the last folder you created.
 
+    rmdir "mappe"
+
 14: Create a file called "degree.txt" and immediately delete it.
+
+    touch degree.txt && rm degree.txt
 
 15: Create a file called "surprise.txt".
 
+    touch surprise.txt
+
 16: Output the full path you are on.
+
+    pwd
 
 17: Delete the last file you created.
 
+    rm surpeise.txt
+
 18: Move one level up (stay inside "cli_sandbox").
+
+    cd ..
 
 19: Move two folders up (but never leave "cli_sandbox").
 
+    cd ../..
+
 20: Output hidden files.
+
+    la -a
 
 21: Create a file called "needle.txt" and immediately delete it.
 
+    touch needle.txt && rm needle.txt
+
 22: Delete the last folder you created.
+
+    rm <foldername>
 
 23: Move one level up (stay inside "cli_sandbox").
 
+    cd ..
+
 24: Use: echo "advice architecture rain surprise sister" > "discover.txt" to create or overwrite "discover.txt".
+
+    echo "advice architecture rain surprise sister" > discover.txt
 
 25: Output the full path you are on.
 
+    pwd
+
 26: Create a file called "honor.txt" containing these words (one per line): "relative rider relative discover relative". Then count the lines.
+
+    printf "relative\nrider\nrelative\ndiscover\nrelative\n" > honor.txt
+    wc -l honor.txt
 
 27: Create a file called "honor.txt" and immediately delete it.
 
+    touch honer.txt && rm honor.txt
+
 28: If already inside "cli_sandbox", create a directory "shallow" and move into the directory.
+
+    mkdir shallow && cd shallow
 
 29: Create a file "appreciate.txt" containing: "shallow pray shallow nerve shallow". Then output the unique lines.
 
+    printf "shallow\npray\nshallow\nnerve\nshallow\n" > appreciate.txt
+    uniq appreciate.txt
+
 30: Delete the last file you created.
+
+    rm appriciate.txt
 
 31: Delete the last file you created.
 
