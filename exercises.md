@@ -53,39 +53,77 @@ IMPORTANT: Do ALL exercises inside ~/cli_sandbox to avoid changing important fil
 
 13: Delete the last folder you created.
 
+    rmdir "mappe"
+
 14: Create a file called "degree.txt" and immediately delete it.
+
+    touch degree.txt && rm degree.txt
 
 15: Create a file called "surprise.txt".
 
+    touch surprise.txt
+
 16: Output the full path you are on.
+
+    pwd
 
 17: Delete the last file you created.
 
+    rm surpeise.txt
+
 18: Move one level up (stay inside "cli_sandbox").
+
+    cd ..
 
 19: Move two folders up (but never leave "cli_sandbox").
 
+    cd ../..
+
 20: Output hidden files.
+
+    la -a
 
 21: Create a file called "needle.txt" and immediately delete it.
 
+    touch needle.txt && rm needle.txt
+
 22: Delete the last folder you created.
+
+    rm <foldername>
 
 23: Move one level up (stay inside "cli_sandbox").
 
+    cd ..
+
 24: Use: echo "advice architecture rain surprise sister" > "discover.txt" to create or overwrite "discover.txt".
+
+    echo "advice architecture rain surprise sister" > discover.txt
 
 25: Output the full path you are on.
 
+    pwd
+
 26: Create a file called "honor.txt" containing these words (one per line): "relative rider relative discover relative". Then count the lines.
+
+    printf "relative\nrider\nrelative\ndiscover\nrelative\n" > honor.txt
+    wc -l honor.txt
 
 27: Create a file called "honor.txt" and immediately delete it.
 
+    touch honer.txt && rm honor.txt
+
 28: If already inside "cli_sandbox", create a directory "shallow" and move into the directory.
+
+    mkdir shallow && cd shallow
 
 29: Create a file "appreciate.txt" containing: "shallow pray shallow nerve shallow". Then output the unique lines.
 
+    printf "shallow\npray\nshallow\nnerve\nshallow\n" > appreciate.txt
+    uniq appreciate.txt
+
 30: Delete the last file you created.
+
+    rm appriciate.txt
 
 31: Delete the last file you created.
 
